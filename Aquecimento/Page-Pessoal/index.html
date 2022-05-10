@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>Rhogger FS</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <img src="imagens/Logo.png" alt="logo">
+    </div>
+    <ul>
+      <li>
+        <a href="https://github.com/Rhogger" target="_blank"> <img src="icons/github-icon.svg"> </a>
+      </li>
+
+      <li>
+        <a href="https://www.linkedin.com/in/rhogger-freitas-699594214/" target="_blank"> <img src="icons/linkedin-icon.svg"> </a>
+      </li>
+
+      <li>
+        <a href="https://wa.me/5564999840431" target="_blank"> <img src="icons/whatsapp-icon.svg"> </a>
+      </li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="container">
+      <div class="name">
+        <h1>Rhogger FS</h1>
+
+        <h5>Estudante de Engenharia de Software e Desenvolvimento Web</h5>
+      </div>
+
+      <div id="arrow" onclick="displayAbout()">
+        <i id="animation" class="fa-solid fa-caret-down"></i>
+      </div>
+
+      <div style="display: none;" class="text" id="description">
+        <div id="about">
+          <p>
+            Olá, me chamo Rhogger, tenho 19 anos. Estou cursando Engenharia de Software na Universidade de Rio Verde (FESURV), estou no 3° Período.
+          </p>
+
+          <p>
+            Nas horas vagas ando estudando sobre desenvolvimento, especialmente para a web.
+          </p>
+        </div>
+
+        <div id="experiences">
+          <h5>Experiências</h5>
+
+          <p>
+            Linguagens: C, Java, HTML, CSS.
+          </p>
+
+          <p>
+            Ferramentas: GIT, Astah UML.
+          </p>
+        </div>
+      </div>
+
+      <div class="form">
+        <div>
+          <p>Fale comigo</p>
+        </div>
+
+        <div id="button">
+          <form action="">
+            <input type="text" placeholder="Digite seu e-mail">
+            <button>Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function displayAbout() {
+      var arrow = document.getElementById('animation');
+      arrow.classList.toggle('rotate');
+
+      var display = document.getElementById('description');
+      display.classList.toggle('active');
+    }
+  </script>
+
+</body>
+
+</html>

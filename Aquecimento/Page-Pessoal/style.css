@@ -1,0 +1,259 @@
+/* Start Reset CSS*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  color: #000;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  line-height: 1;
+  color: black;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* End reset CSS */
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-image: linear-gradient(325deg, rgb(0, 0, 0) 0%, rgb(236, 243, 252) 100%);
+  background-repeat: no-repeat;
+  background-position: center center fixed;
+  background-size: cover;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: aliceblue;
+  border-radius: 20px;
+}
+
+header {
+  margin-bottom: 50px;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  box-shadow: 1px 1px 10px 1px black;
+}
+
+header div img {
+  width: 25vh;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  padding: 0 5px;
+}
+
+header ul li img {
+  width: 48px;
+}
+
+.container {
+  text-align: center;
+}
+
+.container .text {
+  background-color: aliceblue;
+  border-radius: 10px;
+  border-bottom: 1px solid black;
+  border-left: 1 px solid black;
+  box-shadow: 1px 5px 10px 1px;
+}
+
+.container .name h1 {
+  font-size: 70px;
+  font-weight: 700px;
+  padding: 20px;
+}
+
+.container .name h5 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500px;
+  padding: 10px;
+}
+
+#arrow {
+  font-size: 50px;
+  cursor: pointer;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-timing-function: steps(5, start);
+  animation-iteration-count: infinite;
+}
+
+#animation {
+  animation: blink 1s steps(5, start) infinite;
+  transition: 300ms;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+
+.rotate {
+  transform: rotate(180deg);
+  animation: blink 1s steps(5, start) infinite;
+  transition: 300ms;
+}
+
+.active {
+  display: block !important;
+}
+
+.text {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-size-adjust: 30px;
+  line-height: 20px;
+}
+
+.text #about p {
+  padding: 10px;
+  text-align: left;
+}
+
+.text #experiences h5 {
+  font-size: 20px;
+  font-weight: 500px;
+  padding: 30px 15px 0px 15px;
+}
+
+.text #experiences p {
+  padding: 10px;
+}
+
+
+.form {
+  width: 40%;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.form #button form {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.form #button input {
+  width: 50%;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  background-color: white;
+}
+
+.form #button button {
+  width: 15%;
+  background: linear-gradient(to right, rgb(41, 162, 233) 50%, rgb(255, 255, 255) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: all 400ms ease-out;
+}
+
+.form #button button:hover {
+  background-position: left bottom;
+  background-color: rgb(180, 185, 180);
+  color: rgb(0, 0, 0);
+}
